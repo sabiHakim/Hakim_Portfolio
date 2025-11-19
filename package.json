@@ -2,13 +2,16 @@
   "name": "mon-portfolio",
   "version": "0.1.0",
   "private": true,
- "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "deploy": "next build && npx gh-pages -d out"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint",
+  "deploy": "next build && touch out/.nojekyll && gh-pages -d out"
+},
+"env": {
+  "GITHUB_PAGES": "true"
+}
   "dependencies": {
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
