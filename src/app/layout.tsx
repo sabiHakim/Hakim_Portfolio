@@ -22,7 +22,6 @@ export default function RootLayout({
       <body className={`${inter.className} bg-black text-white overflow-x-hidden`}>
         <SmoothScroll>
           <Header />
-          {/* <Cursor /> */}
           {children}
         </SmoothScroll>
       </body>
